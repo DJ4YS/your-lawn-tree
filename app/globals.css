@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-gray-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .hero-dot-pattern {
+    opacity: 0.1;
+    background-image:
+      radial-gradient(circle at 25% 25%, white 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, white 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-lawn text-white font-semibold px-6 py-3 rounded-lg hover:bg-lawn-dark transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-lawn focus:ring-offset-2;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-lawn-dark transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+  }
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-gray-900;
+  }
+  .section-subheading {
+    @apply text-lg text-gray-600 mt-3 max-w-2xl;
+  }
+}
