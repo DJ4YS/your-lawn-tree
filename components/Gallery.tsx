@@ -65,7 +65,18 @@ export default function Gallery() {
           onClick={() => setLightbox(null)}
         >
           <div className="relative max-w-5xl w-full max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
-            <div className="relative w-full h-[80vh]">
+            {/* Close button */}
+            <button
+              onClick={() => setLightbox(null)}
+              className="absolute top-2 right-2 z-10 bg-black/50 rounded-full p-1.5 text-white hover:text-green-300 transition-colors"
+              aria-label="Close"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <div className="relative w-full h-[70vh] sm:h-[80vh]">
               <Image
                 src={photos[lightbox].src}
                 alt={photos[lightbox].alt}
@@ -75,33 +86,24 @@ export default function Gallery() {
               />
             </div>
 
+            {/* Prev / Next — inside image on mobile, outside on desktop */}
             <button
               onClick={prev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 text-white hover:text-green-300 transition-colors"
+              className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 sm:-translate-x-12 bg-black/40 sm:bg-transparent rounded-full p-2 sm:p-0 text-white hover:text-green-300 transition-colors"
               aria-label="Previous photo"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 sm:w-10 sm:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
 
             <button
               onClick={next}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 text-white hover:text-green-300 transition-colors"
+              className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 sm:translate-x-12 bg-black/40 sm:bg-transparent rounded-full p-2 sm:p-0 text-white hover:text-green-300 transition-colors"
               aria-label="Next photo"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 sm:w-10 sm:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-
-            <button
-              onClick={() => setLightbox(null)}
-              className="absolute top-0 right-0 -translate-y-10 text-white hover:text-green-300 transition-colors"
-              aria-label="Close"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 

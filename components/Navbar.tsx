@@ -8,8 +8,10 @@ import { PHONE, PHONE_HREF } from "@/lib/constants";
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
+  { label: "Pricing", href: "#pricing" },
   { label: "Gallery", href: "#gallery" },
-  { label: "About", href: "#about" },
+  { label: "Reviews", href: "#reviews" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -25,9 +27,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="#home" className="flex items-center gap-3">
-            <div className="relative w-10 h-10">
+            <div className="relative w-10 h-10 sm:w-14 sm:h-14">
               <Image
-                src="/logo.webp"
+                src="/logo-icon.webp"
                 alt="Sombrero Lawn & Tree Logo"
                 fill
                 className="object-contain"

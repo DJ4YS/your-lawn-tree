@@ -1,9 +1,9 @@
 import { PHONE, PHONE_HREF } from "@/lib/constants";
 
 const stats = [
-  { value: "100%", label: "Satisfaction Goal" },
-  { value: "SA", label: "San Antonio Based" },
-  { value: "4", label: "Core Services" },
+  { value: "5★", label: "Google Rating" },
+  { value: "40+", label: "Happy Customers" },
+  { value: "Same Day", label: "Service Available" },
   { value: "Free", label: "Estimates" },
 ];
 
@@ -48,9 +48,10 @@ export default function About() {
                 hard work, reliability, and a genuine love for the craft.
               </p>
               <p>
-                Whether you need a weekly mow, a seasonal fertilizing treatment,
+                Whether you need a weekly mow, seasonal fertilizing, tree trimming,
                 or a full landscaping overhaul, our team shows up on time with
-                the right tools and the right attitude to get the job done.
+                the right tools and the right attitude to get the job done —
+                often the same day you call.
               </p>
               <p>
                 We understand the Texas climate — the heat, the dry spells, and
