@@ -1,36 +1,35 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const SITE_URL = "https://sombrero-lawn-tree.vercel.app";
+const SITE_URL = "https://yourlawncare.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sombrero Lawn & Tree | San Antonio Lawn Care & Tree Service",
-    template: "%s | Sombrero Lawn & Tree",
+    default: "Your Lawn & Tree | Local Lawn Care & Tree Service",
+    template: "%s | Your Lawn & Tree",
   },
   description:
-    "San Antonio's trusted lawn care and tree service. Mowing, edging, fertilizing, tree trimming, tree removal, junk removal & more. Same-day service available. Call 210-878-5845 for a free quote.",
+    "Your local lawn care and tree service experts. Mowing, edging, fertilizing, tree trimming, tree removal, junk removal & more. Same-day service available. Call for a free quote.",
   keywords: [
-    "lawn care San Antonio",
-    "lawn mowing San Antonio TX",
-    "tree trimming San Antonio",
-    "tree removal San Antonio",
-    "landscaping San Antonio",
-    "edging San Antonio",
-    "fertilizing lawn San Antonio",
-    "junk removal San Antonio",
-    "debris removal San Antonio",
-    "hedging San Antonio",
-    "permanent lighting San Antonio",
-    "lawn service San Antonio",
-    "Sombrero Lawn and Tree",
-    "affordable lawn care TX",
-    "same day lawn service San Antonio",
+    "lawn care",
+    "lawn mowing",
+    "tree trimming",
+    "tree removal",
+    "landscaping",
+    "edging",
+    "fertilizing lawn",
+    "junk removal",
+    "debris removal",
+    "hedging",
+    "permanent lighting",
+    "lawn service",
+    "affordable lawn care",
+    "same day lawn service",
   ],
-  authors: [{ name: "Sombrero Lawn & Tree" }],
-  creator: "Sombrero Lawn & Tree",
-  publisher: "Sombrero Lawn & Tree",
+  authors: [{ name: "Your Lawn & Tree" }],
+  creator: "Your Lawn & Tree",
+  publisher: "Your Lawn & Tree",
   robots: {
     index: true,
     follow: true,
@@ -48,24 +47,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Sombrero Lawn & Tree",
-    title: "Sombrero Lawn & Tree | San Antonio Lawn Care & Tree Service",
+    siteName: "Your Lawn & Tree",
+    title: "Your Lawn & Tree | Local Lawn Care & Tree Service",
     description:
-      "San Antonio's trusted lawn care and tree service. Mowing, edging, fertilizing, tree trimming, tree removal, junk removal & more. Same-day service available. Call 210-878-5845.",
+      "Your local lawn care and tree service experts. Mowing, edging, fertilizing, tree trimming, tree removal, junk removal & more. Same-day service available.",
     images: [
       {
         url: "/hero-bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Sombrero Lawn & Tree — San Antonio Lawn Care",
+        alt: "Your Lawn & Tree — Local Lawn Care",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sombrero Lawn & Tree | San Antonio Lawn Care & Tree Service",
+    title: "Your Lawn & Tree | Local Lawn Care & Tree Service",
     description:
-      "San Antonio's trusted lawn care and tree service. Same-day service available. Call 210-878-5845 for a free quote.",
+      "Your local lawn care and tree service experts. Same-day service available. Call for a free quote.",
     images: ["/hero-bg.jpg"],
   },
   category: "Lawn Care & Landscaping",
@@ -75,32 +74,16 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": SITE_URL,
-  name: "Sombrero Lawn & Tree",
+  name: "Your Lawn & Tree",
   description:
-    "Professional lawn care and tree services in San Antonio, TX. Mowing, edging, fertilizing, tree trimming, tree removal, junk removal, debris disposal, hedging, and permanent lighting.",
+    "Professional lawn care and tree services. Mowing, edging, fertilizing, tree trimming, tree removal, junk removal, debris disposal, hedging, and permanent lighting.",
   url: SITE_URL,
-  telephone: "+12108785845",
-  email: "sombrerolawnandtree@gmail.com",
+  telephone: "+10000000000",
+  email: "info@yourlawncare.com",
   image: `${SITE_URL}/logo.webp`,
   priceRange: "$$",
   currenciesAccepted: "USD",
   paymentAccepted: "Cash, Check, Credit Card",
-  areaServed: {
-    "@type": "City",
-    name: "San Antonio",
-    sameAs: "https://en.wikipedia.org/wiki/San_Antonio",
-  },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "San Antonio",
-    addressRegion: "TX",
-    addressCountry: "US",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 29.4241,
-    longitude: -98.4936,
-  },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -109,13 +92,6 @@ const jsonLd = {
       closes: "18:00",
     },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "40",
-    bestRating: "5",
-    worstRating: "1",
-  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Lawn Care & Tree Services",
@@ -131,9 +107,6 @@ const jsonLd = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hedging" } },
     ],
   },
-  sameAs: [
-    "https://www.facebook.com/sombrerolawn",
-  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -144,10 +117,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <meta name="geo.region" content="US-TX" />
-        <meta name="geo.placename" content="San Antonio" />
-        <meta name="geo.position" content="29.4241;-98.4936" />
-        <meta name="ICBM" content="29.4241, -98.4936" />
       </head>
       <body>{children}</body>
     </html>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { PHONE, PHONE_HREF } from "@/lib/constants";
 
@@ -15,9 +14,6 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-function hideOnError(e: React.SyntheticEvent<HTMLImageElement>) {
-  e.currentTarget.style.display = "none";
-}
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,18 +23,30 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="#home" className="flex items-center gap-3">
-            <div className="relative w-10 h-10 sm:w-14 sm:h-14">
-              <Image
-                src="/logo-icon.webp"
-                alt="Sombrero Lawn & Tree Logo"
-                fill
-                className="object-contain"
-                onError={hideOnError}
-              />
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-lawn-dark flex items-center justify-center flex-shrink-0">
+              <svg viewBox="0 0 48 48" className="w-7 h-7 sm:w-8 sm:h-8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Ground */}
+                <rect x="4" y="36" width="40" height="5" rx="2.5" fill="#4ade80" />
+                {/* Grass blades */}
+                <path d="M12 36 Q10 28 14 22 Q16 30 12 36Z" fill="#86efac" />
+                <path d="M12 36 Q15 26 18 20 Q18 30 12 36Z" fill="#4ade80" />
+                <path d="M22 36 Q20 26 24 18 Q26 28 22 36Z" fill="#86efac" />
+                <path d="M22 36 Q25 24 28 18 Q28 29 22 36Z" fill="#4ade80" />
+                <path d="M33 36 Q31 27 35 21 Q37 29 33 36Z" fill="#86efac" />
+                <path d="M33 36 Q36 25 39 20 Q39 30 33 36Z" fill="#4ade80" />
+                {/* Sun */}
+                <circle cx="36" cy="13" r="5" fill="#fde047" />
+                <line x1="36" y1="5" x2="36" y2="3" stroke="#fde047" strokeWidth="2" strokeLinecap="round" />
+                <line x1="36" y1="21" x2="36" y2="23" stroke="#fde047" strokeWidth="2" strokeLinecap="round" />
+                <line x1="28" y1="13" x2="26" y2="13" stroke="#fde047" strokeWidth="2" strokeLinecap="round" />
+                <line x1="44" y1="13" x2="46" y2="13" stroke="#fde047" strokeWidth="2" strokeLinecap="round" />
+                <line x1="30.34" y1="7.34" x2="28.93" y2="5.93" stroke="#fde047" strokeWidth="2" strokeLinecap="round" />
+                <line x1="41.66" y1="18.66" x2="43.07" y2="20.07" stroke="#fde047" strokeWidth="2" strokeLinecap="round" />
+              </svg>
             </div>
             <span className="text-lawn-dark font-bold text-xl leading-tight">
-              Sombrero<br />
-              <span className="text-lawn font-semibold text-base">Lawn & Tree</span>
+              Your Lawn<br />
+              <span className="text-lawn font-semibold text-base">& Tree</span>
             </span>
           </Link>
 

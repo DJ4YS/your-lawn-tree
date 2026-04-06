@@ -6,7 +6,7 @@ import { SERVICES } from "@/lib/services";
 
 const trustBadges = [
   "Reliable & On-Time",
-  "Local San Antonio Business",
+  "Local Family Business",
   "Free Estimates",
 ];
 
@@ -61,7 +61,7 @@ export default function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              Proudly Serving San Antonio, TX
+              Proudly Serving Your Local Community
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
@@ -70,7 +70,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-green-100 font-light mb-10 leading-relaxed">
-              Professional lawn care and landscaping services in San Antonio.
+              Professional lawn care and landscaping services for your neighborhood.
               Reliable, affordable, and built around your schedule.
             </p>
 

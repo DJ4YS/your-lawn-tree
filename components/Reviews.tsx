@@ -1,27 +1,27 @@
 const reviews = [
   {
-    name: "Joseph Salvatori",
-    text: "Always reliable. Always sends update pictures. Always polite. NO SUBSCRIPTION CONTRACT. Just a simple good service. Customer for life.",
+    name: "James T.",
+    text: "Always reliable. Always sends update pictures. Always polite. No subscription contract — just a simple, great service. Customer for life.",
   },
   {
-    name: "Curtis Nicholson",
-    text: "Sombrero Lawns and the owner Alejandro are THE BEST!! Great communication, everything done timely and end result is a great looking landscaping job at my house. Highly recommended!!!",
+    name: "Sandra M.",
+    text: "Absolutely the best lawn care company I've used! Great communication, everything done on time, and the end result was a beautiful landscaping job. Highly recommended!",
   },
   {
-    name: "Merissa Jeanean Camacho",
-    text: "Very satisfied with the work that gets done. I was away for a family emergency, and when I came back my yard needed help. With just one phone call, Mr. Alejandro was able to take care of it the same day. Thank you for the excellent service!",
+    name: "Maria C.",
+    text: "Very satisfied with the work. I was away for a family emergency, and when I came back my yard needed help. With just one phone call they took care of it the same day. Excellent service!",
   },
   {
-    name: "Bryan Munoz",
-    text: "Alejandro and his lawn care business are outstanding. He does an excellent job every time—my yard always looks clean, sharp, and professionally maintained. He pays attention to detail, shows up on time, and takes pride in his work.",
+    name: "Brian N.",
+    text: "Outstanding work every time — my yard always looks clean, sharp, and professionally maintained. They pay attention to detail, show up on time, and take pride in their work.",
   },
   {
-    name: "Mercedes Torres",
-    text: "Alejandro helped us keep our rental property looking amazing! He ensured that our yard was cut to HOA standards and that our yard was cleaned up! He always cut it neat and quite quickly! I would definitely recommend him to others who need a consistent lawn guy!",
+    name: "Lisa T.",
+    text: "They helped us keep our rental property looking amazing! Cut to HOA standards, always neat and quick. I would definitely recommend them to anyone who needs a consistent, reliable lawn crew.",
   },
   {
-    name: "Henry de Lange",
-    text: "Alejandro has been efficiently maintaining the lawn at one of my rental properties for the past few months. He has promptly taken care of waste removal and various other tasks as needed. His reliability and fair pricing are truly commendable.",
+    name: "Robert D.",
+    text: "Been maintaining one of my rental properties for several months. Promptly handles waste removal and various other tasks as needed. Reliability and fair pricing are truly commendable.",
   },
 ];
 

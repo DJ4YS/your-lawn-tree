@@ -11,15 +11,15 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <h3 className="text-xl font-bold mb-2">{COMPANY_NAME}</h3>
             <p className="text-green-300 text-sm leading-relaxed mb-4">
-              Professional lawn care and tree services in {SERVICE_AREA}.
+              Professional lawn care and tree services for your local community.
             </p>
             {/* Social links */}
             <div className="flex gap-3">
               <a
-                href="https://www.facebook.com/sombrerolawn"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Sombrero Lawn & Tree on Facebook"
+                aria-label="Your Lawn & Tree on Facebook"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
               >
                 <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24">

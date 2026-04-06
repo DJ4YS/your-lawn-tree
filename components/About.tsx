@@ -39,13 +39,13 @@ export default function About() {
               About Us
             </span>
             <h2 className="section-heading mb-6">
-              San Antonio's Local Lawn Care Experts
+              Your Local Lawn Care Experts
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                At Sombrero Lawn & Tree, we take pride in keeping San Antonio yards
-                looking their absolute best. We're a local business built on
-                hard work, reliability, and a genuine love for the craft.
+                We take pride in keeping local yards looking their absolute best.
+                We're a local business built on hard work, reliability, and a
+                genuine love for the craft.
               </p>
               <p>
                 Whether you need a weekly mow, seasonal fertilizing, tree trimming,
@@ -54,9 +54,8 @@ export default function About() {
                 often the same day you call.
               </p>
               <p>
-                We understand the Texas climate — the heat, the dry spells, and
-                what your lawn needs to thrive all year long. That local
-                knowledge makes all the difference.
+                We know the local climate and what your lawn needs to thrive all
+                year long. That local knowledge makes all the difference.
               </p>
             </div>
 
